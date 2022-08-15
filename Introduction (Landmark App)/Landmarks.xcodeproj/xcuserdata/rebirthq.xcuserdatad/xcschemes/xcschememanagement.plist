@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Landmarks.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MacLandmarks.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>WatchLandmarks (Complication).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>WatchLandmarks (Notification).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>WatchLandmarks.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E762B903288E41070016ABBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7C8356E288D597000A1E6C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7C83590288D597100A1E6C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7C8359A288D597100A1E6C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7F8A657287EC10A00F79D26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
