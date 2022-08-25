@@ -26,3 +26,31 @@ let missionMessage = "Apllo \(number + 10) landed on the moon."
 let celsuis = 10.0
 let fahrenheit = celsuis * 9 / 5 + 32
 print("Celsuis: \(celsuis)°C; Fahrenheit: \(fahrenheit)°F")
+
+var scores = Array<Int>()
+scores.append(100)
+scores.append(80)
+scores.append(85)
+print(scores[1])
+
+let presidents = ["Bush","Obama","Trump","Biden"]
+let reversedPresidents = presidents.reversed()
+print(reversedPresidents)
+
+let employee2 = [
+    "name": "Taylor Swift",
+    "job": "Singer",
+    "location": "Nashville"
+]
+print(employee2["name", default: "Unknown"])
+print(employee2["job", default: "Unknown"])
+print(employee2["location", default: "Unknown"])
+
+var heights = [String: Int]()
+heights["YaoMing"] = 229
+heights["Shaquille O'Neal"] = 216
+heights["LeBron James"] = 206
+print(heights.count)
+
+let people = Set(["Denzel Washington", "Tom Cruise", "Nicolas Cage", "Samuel L Jackson"])
+print(people)
