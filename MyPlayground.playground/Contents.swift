@@ -21,7 +21,7 @@ let number = 10
 //let missionMessage = "Apllo" + String(number) + " landed on the moon."
 let missionMessage = "Apllo \(number + 10) landed on the moon."
 
-//Checkpoint 1
+//: Checkpoint 1
 //celsuis 应该用Double 后面+".0"
 let celsuis = 10.0
 let fahrenheit = celsuis * 9 / 5 + 32
@@ -36,8 +36,9 @@ print(scores[1])
 let presidents = ["Bush","Obama","Trump","Biden"]
 let reversedPresidents = presidents.reversed()
 print(reversedPresidents)
+print(presidents.contains("Bush"))
 
-let employee2 = [
+var employee2 = [
     "name": "Taylor Swift",
     "job": "Singer",
     "location": "Nashville"
@@ -45,12 +46,23 @@ let employee2 = [
 print(employee2["name", default: "Unknown"])
 print(employee2["job", default: "Unknown"])
 print(employee2["location", default: "Unknown"])
+print(employee2.count)
+print(employee2.removeAll())
+print(employee2)
 
 var heights = [String: Int]()
 heights["YaoMing"] = 229
 heights["Shaquille O'Neal"] = 216
 heights["LeBron James"] = 206
-print(heights.count)
+print(heights)
 
 let people = Set(["Denzel Washington", "Tom Cruise", "Nicolas Cage", "Samuel L Jackson"])
 print(people)
+
+let capitals = ["England": "London", "Wales": "Cardiff"]
+let scotlandCapital = capitals["Scotland"]
+
+//:Checkpoint 2
+var checkpointArray = ["a","a","b","c"]
+print("number of items: \(checkpointArray.count)")
+print("number of unique items: \(Set(checkpointArray).count)")
