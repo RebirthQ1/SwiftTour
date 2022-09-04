@@ -66,3 +66,92 @@ let scotlandCapital = capitals["Scotland"]
 var checkpointArray = ["a","a","b","c"]
 print("number of items: \(checkpointArray.count)")
 print("number of unique items: \(Set(checkpointArray).count)")
+
+let speed = 88
+let percentage = 84
+let age = 18
+
+if speed >= 88 {
+    print("Where we're going we don't need roads.")
+}
+
+if percentage < 85 {
+    print("Sorry, you failed the test.")
+}
+
+if age >= 18 {
+    print("You're eligible to vote")
+}
+
+let ourName = "Dave Lister"
+let friendName = "Arnold Rimmer"
+
+if ourName < friendName {
+    print("It's \(ourName) vs \(friendName)")
+}
+
+if ourName > friendName {
+    print("It's \(friendName) vs \(ourName)")
+}
+
+// Make an array of 3 numbers
+var numbers = [1, 2, 3]
+
+// Add a 4th
+numbers.append(4)
+
+// If we have over 3 items
+if numbers.count > 3 {
+    // Remove the oldest number
+    numbers.remove(at: 0)
+}
+
+// Display the result
+print(numbers)
+
+enum Weather {
+    case sun, rain, wind, snow, unknown
+}
+let forecast = Weather.sun
+switch forecast {
+case .sun:
+    print("It should be a nice day.")
+case .rain:
+    print("Pack an umbrella.")
+case .wind:
+    print("Wear something warm")
+case .snow:
+    print("School is cancelled.")
+case .unknown:
+    print("Our forecast generator is broken!")
+}
+
+let a = 1
+switch a {
+case 1:
+    print("1")
+case 2:
+    print("2")
+default:
+    print("default")
+}
+
+let day = 5
+print("My true love gave to me…")
+
+switch day {
+case 5:
+    print("5 golden rings")
+    fallthrough
+case 4:
+    print("4 calling birds")
+    fallthrough
+case 3:
+    print("3 French hens")
+    fallthrough
+case 2:
+    print("2 turtle doves")
+    fallthrough
+default:
+    print("A partridge in a pear tree")
+}
