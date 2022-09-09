@@ -156,3 +156,12 @@ default:
     print("A partridge in a pear tree")
 }
 
+let platforms = ["iOS", "macOS", "tvOS", "watchOS"]
+
+for os in platforms {
+    print("Swift works great on \(os).")
+}
+
+for i in 1...12 {
+    print("5 x \(i) is \(5 * i)")
+}
