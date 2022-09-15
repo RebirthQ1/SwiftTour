@@ -186,3 +186,129 @@ while roll != 20 {
 
 // if we're here it means the loop ended – we got a 20!
 print("Critical hit!")
+
+let filenames = ["me.jpg", "work.txt", "sophie.jpg", "logo.psd"]
+
+for filename in filenames {
+    if filename.hasSuffix(".jpg") == false {
+        continue
+    }
+    
+    print("Found picture: \(filename)")
+}
+
+let number1 = 4
+let number2 = 14
+var multiples = [Int]()
+
+for i in 1...100_000 {
+    if i.isMultiple(of: number1) && i.isMultiple(of: number2) {
+        multiples.append(i)
+        
+        if multiples.count == 10 {
+            break
+        }
+    }
+}
+
+print(multiples)
+
+//: Checkpoint 3
+for i in 1...100 {
+    if i.isMultiple(of: 3) {
+        print("Fizz")
+    } else if i.isMultiple(of: 5) {
+        print("Buzz")
+    } else if i.isMultiple(of: 5) && i.isMultiple(of: 3) {
+        print("FizzBuzz")
+    } else {
+        print("i is \(i)")
+    }
+}
+
+
+let root = sqrt(169)
+print(root)
+
+
+func checkCommenLetters(first: String, second: String) -> Bool{
+    //    if(first.sorted() == second.sorted()){
+    //        return true
+    //    } else {
+    //        return false
+    //    }
+    /*return*/ first.sorted() == second.sorted()
+}
+print(checkCommenLetters(first: "test", second: "sett"))
+
+//Error handling
+enum PasswordError: Error {
+    case short, obvious
+}
+
+func checkPassword(_ password: String) throws -> String {
+    if password.count < 5 {
+        throw PasswordError.short
+    }
+
+    if password == "12345" {
+        throw PasswordError.obvious
+    }
+
+    if password.count < 8 {
+        return "OK"
+    } else if password.count < 10 {
+        return "Good"
+    } else {
+        return "Excellent"
+    }
+}
+let string = "12345"
+
+do {
+    let result = try checkPassword(string)
+    print("Password rating: \(result)")
+} catch PasswordError.short {
+    print("Please use a longer password.")
+} catch PasswordError.obvious {
+    print("I have the same combination on my luggage!")
+    print(PasswordError.obvious.localizedDescription)
+} catch {
+    print("There was an error.")
+}
+
+//:Checkpoint 4
+enum errorCase: Error{
+    case outOfBounds, noResult
+}
+
+func getSquareRoot(_ number: Int)throws -> Int {
+    if(number < 1 || number > 10000){
+        throw errorCase.outOfBounds
+    }
+    var result = false
+    for i in 1...100/*10000*/{
+        if (i * i == number){
+            result = true
+            return i
+        }
+    }
+    if !result {
+        throw errorCase.noResult
+    }
+}
+
+do {
+    let result = try getSquareRoot(8)
+    print("Result is \(result)")
+} catch errorCase.outOfBounds{
+    print("Out of bounds")
+} catch errorCase.noResult{
+    print("No result")
+}
+
+
+func testFunction(number: Int) -> Int{
+    number
+}
+testFunction(number: 1)
